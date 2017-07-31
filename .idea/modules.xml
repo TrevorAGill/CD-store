@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cdStore.iml" filepath="$PROJECT_DIR$/.idea/modules/cdStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cdStore_main.iml" filepath="$PROJECT_DIR$/.idea/modules/cdStore_main.iml" group="cdStore" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cdStore_test.iml" filepath="$PROJECT_DIR$/.idea/modules/cdStore_test.iml" group="cdStore" />
+    </modules>
+  </component>
+</project>
