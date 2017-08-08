@@ -28,11 +28,10 @@ public class App {
             String album = request.queryParams("albumName");
             int year = Integer.parseInt(request.queryParams("releaseYear"));
             int price = Integer.parseInt(request.queryParams("price"));
-            CD newCD = new CD(artist,album,year,price);
-            return new ModelAndView(model, "success.hbs");
-        }, new HandlebarsTemplateEngine());
-
-
+            CD newCD = new CD(artist, album, year, price);
+            response.redirect("/");
+            return null;
+        });
 
     }
 }
