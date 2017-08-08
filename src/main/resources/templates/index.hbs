@@ -1,0 +1,38 @@
+{{#partial "content"}}
+
+   <h1>CD Collection</h1>
+
+   {{#if allCDs}}
+       {{#each allCDs}} <!--loop-->
+       <p>Current CD:</p>
+       <p>Artist: {{artistName}}</p>
+       <p>Album: {{albumName}}</p>
+       <p>Year: {{releaseYear}}</p>
+       <p>Price: {{price}}</p><!--show-->
+       {{/each}}
+   {{else}} <!--no posts!-->
+    <p>No CDs!</p>
+   {{/if}}
+
+   <p>Add a new CD to your collection:</p>
+
+   <form action="/success/new" method="post">
+
+       <label for="artistName">Artist</label>
+       <input id="artistName" name="artistName" type="text">
+
+       <label for="albumName">Album</label>
+       <input id="albumName" name="albumName" type="text">
+
+       <label for="releaseYear">Release Year</label>
+       <input id="releaseYear" name="releaseYear" type="number">
+
+       <label for="price">Price</label>
+       <input id="price" name="price" type="number">
+
+       <button type="submit" class="btn btn-default">Add new CD</button>
+   </form>
+
+{{/partial}}
+
+{{> layout.hbs}}
